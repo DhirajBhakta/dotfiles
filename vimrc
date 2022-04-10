@@ -38,7 +38,7 @@ let g:netrw_list_hide=',\(^\|\s\s\)\zs\.\S\+'
 
 call plug#begin()
 
-Plug 'marko-cerovac/material.nvim'
+Plug 'https://github.com/morhetz/gruvbox'
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 
 " >>>Conquer Of Completion - turned off by default
@@ -50,8 +50,6 @@ Plug 'https://github.com/neoclide/coc.nvim'
 
 " >>>Web development - turned off by default
 " Plug 'prettier/vim-prettier', " Prettier for JS TS React development
-" >>>Go development 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 set encoding=UTF-8
 call plug#end()
 
@@ -60,8 +58,8 @@ nmap     <C-p> :find
 
 :set completeopt-=preview " For No Previews
 
-let g:material_style = "palenight"
-:colorscheme material
+:colorscheme gruvbox
+:set bg=dark
 
 
 " --- Just Some Notes ---
